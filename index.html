@@ -9,41 +9,50 @@ Adam Gressen's Webpage
 <body>
 	<div id="container">
 		<div id="left">
-		<!---------------------------------------------------------------------------->
-		<!-- TWITTER PLUGIN -->
-		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-			<script>
-				new TWTR.Widget({
-				  version: 2,
-				  type: 'profile',
-				  rpp: 4,
-				  interval: 30000,
-				  width: 250,
-				  height: 300,
-				  theme: {
-					shell: {
-					  background: '#333333',
-					  color: '#ffffff'
-					},
-					tweets: {
-					  background: '#000000',
-					  color: '#ffffff',
-					  links: '#4aed05'
-					}
-				  },
-				  features: {
-					scrollbar: true,
-					loop: false,
-					live: false,
-					behavior: 'all'
-				  }
-				}).render().setUser('adamgressen').start();
-			</script>
-		<!-- END TWITTER PLUGIN -->
-		<!---------------------------------------------------------------------------->
+		
 		</div>
 
-		<div id="center" class="column">
+		<div id="right">
+			<!---------------------------------------------------------------------------->
+			<!-- TWITTER PLUGIN -->
+			<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'profile',
+					  rpp: 4,
+					  interval: 30000,
+					  width: 250,
+					  height: 300,
+					  theme: {
+						shell: {
+						  background: '#333333',
+						  color: '#ffffff'
+						},
+						tweets: {
+						  background: '#000000',
+						  color: '#ffffff',
+						  links: '#4aed05'
+						}
+					  },
+					  features: {
+						scrollbar: true,
+						loop: false,
+						live: false,
+						behavior: 'all'
+					  }
+					}).render().setUser('adamgressen').start();
+				</script>
+			<!-- END TWITTER PLUGIN -->
+			<!---------------------------------------------------------------------------->
+		</div>
+		
+		<!-- center div must appear after left and right to display properly -->
+		<div id="center">
+			<p>
+				Add me on <a href="https://plus.google.com/105797963965211800206/posts">
+				<img src="plus.png" alt="Google+" height="31"></img></a>
+			</p>
 			<p>
 				Listen to my music on <a href="http://soundcloud.com/agressen">
 				<img src="soundcloud.png" alt="SoundCloud" height="31"></img></a>
@@ -65,8 +74,6 @@ Adam Gressen's Webpage
 				<img src="bleacher.png" alt="Bleacher Report" height="31"></img></a>
 			</p>
 		</div>
-
-		<div id="right" class="column"></div>
 	</div>
 
 </body>
