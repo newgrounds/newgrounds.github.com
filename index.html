@@ -7,54 +7,71 @@ Adam Gressen's Webpage
 </head>
 
 <body>
+	<div id="container">
+		<div id="left">
+		<!---------------------------------------------------------------------------->
+		<!-- TWITTER PLUGIN -->
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 4,
+				  interval: 30000,
+				  width: 250,
+				  height: 300,
+				  theme: {
+					shell: {
+					  background: '#333333',
+					  color: '#ffffff'
+					},
+					tweets: {
+					  background: '#000000',
+					  color: '#ffffff',
+					  links: '#4aed05'
+					}
+				  },
+				  features: {
+					scrollbar: true,
+					loop: false,
+					live: false,
+					behavior: 'all'
+				  }
+				}).render().setUser('adamgressen').start();
+			</script>
+		<!-- END TWITTER PLUGIN -->
+		<!---------------------------------------------------------------------------->
+		</div>
 
-<!-- TWITTER PLUGIN -->
+		<div id="center" class="column">
+			<p>
+				Listen to my music on <a href="http://soundcloud.com/agressen">
+				<img src="soundcloud.png" alt="SoundCloud" height="31"></img></a>
+			</p>
+			<p>
+				Checkout my code on <a href="https://github.com/newgrounds">
+				<img src="github.png" alt="Github" height="31"></img></a>
+			</p>
+			<p>
+				Hire me on <a href="https://www.freelancer.com/users/1478095.html" class="freelancer">
+				<img src="freelancer.png" alt="Freelancer" height="31"></img></a>
+			</p>
+			<p>
+				Friend me on <a href="http://www.facebook.com/agressen">
+				<img src="fb.jpg" alt="Facebook" height="31"></img></a>
+			</p>
+			<p>
+				Read my articles on <a href="http://bleacherreport.com/users/699354-adam-gressen">
+				<img src="bleacher.png" alt="Bleacher Report" height="31"></img></a>
+			</p>
+		</div>
 
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 250,
-  height: 300,
-  theme: {
-    shell: {
-      background: '#333333',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#4aed05'
-    }
-  },
-  features: {
-    scrollbar: true,
-    loop: false,
-    live: false,
-    behavior: 'all'
-  }
-}).render().setUser('adamgressen').start();
-</script>
-
-<!-- END TWITTER PLUGIN -->
+		<div id="right" class="column"></div>
+	</div>
 
 </body>
 
 <footer>
-<p>
-Checkout my code on <a href="https://github.com/newgrounds">Github</a>.
-Read my articles on <a href="http://bleacherreport.com/users/699354-adam-gressen">Bleacher Report</a>.
-</p>
-<p>
-Listen to my music on <a href="http://soundcloud.com/agressen">SoundCloud</a>.
-Hire me on <a href="https://www.freelancer.com/users/1478095.html">Freelancer</a>.
-</p>
-<p>
-Friend me on <a href="http://www.facebook.com/agressen">Facebook</a>.
-</p>
 <p class="copy">
 &copy 2012 Adam Gressen
 </p>

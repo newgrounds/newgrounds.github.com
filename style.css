@@ -3,7 +3,12 @@ html {
 }
 
 body {
-	background-image: url('');
+	/*background-image: url('');*/
+	min-width: 500px;
+}
+
+body p{
+	text-align: center;
 }
 
 footer {
@@ -17,4 +22,24 @@ p.copy {
 
 a {
 	color: blue;
+}
+
+#container {
+	width: 100%;
+	float: left;
+}
+
+#center {
+	padding: 0px 250px 0px 250px;
+	margin: 0px;
+}
+
+#left {
+	float: left;
+	width: 250px;
+}
+
+#right {
+	float: right;
+	width: 250px;
 }
