@@ -1,9 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>
 Adam Gressen's Webpage
 </title>
 <link rel="StyleSheet" type="text/css" href="style.css"></link>
+<link rel="StyleSheet" type="text/css" href="search.css"></link>
 </head>
 
 <body>
@@ -28,7 +32,19 @@ Adam Gressen's Webpage
 		</div>
 
 		<div id="right">
-			<!--#include virtual="./search.html" -->
+			<div id="cse-search-form" style="width: 100%;"></div>
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script type="text/javascript"> 
+			  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
+			  google.setOnLoadCallback(function() {
+				var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+				  '002018857588398657620:81xdxuok2im', customSearchOptions);
+				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+				var options = new google.search.DrawOptions();
+				options.setSearchFormRoot('cse-search-form');
+				customSearchControl.draw('cse', options);
+			  }, true);
+			</script>
 			
 			<!---------------------------------------------------------------------------->
 			<!-- TWITTER PLUGIN -->
