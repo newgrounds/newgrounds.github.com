@@ -32,19 +32,7 @@ Adam Gressen's Webpage
 		</div>
 
 		<div id="right">
-			<div id="cse-search-form" style="width: 100%;"></div>
-			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-			<script type="text/javascript"> 
-			  google.load('search', '1', {language : 'en', style : google.loader.themes.V2_DEFAULT});
-			  google.setOnLoadCallback(function() {
-				var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-				  '002018857588398657620:81xdxuok2im', customSearchOptions);
-				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-				var options = new google.search.DrawOptions();
-				options.setSearchFormRoot('cse-search-form');
-				customSearchControl.draw('cse', options);
-			  }, true);
-			</script>
+			<div style="margin-bottom:5px;"></div><div style="border:1px solid #000;width:250px;"><div style="background-color:#000;border:2px solid #FFF;padding:5px;text-align:center;"><img src="http://tmbg.duckduckgo.com/nduck.v106.small.png" alt="DuckDuckGo logo"/><div style="color:#fff;font-size:12px;padding:5px;">DuckDuckGo is a search engine that protects privacy and has lots of features.</div><form action="http://duckduckgo.com/"><input type="text" name="q" style="width:160px;border:1px solid #666;background-color:#000;color:#fff;padding:1px;border-radius:4px;font-size:14px;"/><input type="submit" style="background-color:#000;color:#fff;font-size:12px;padding:2px;" value="Search"><input type="hidden" name="t" value=""/></form></div></div>
 			
 			<!---------------------------------------------------------------------------->
 			<!-- TWITTER PLUGIN -->
@@ -82,7 +70,7 @@ Adam Gressen's Webpage
 		
 		<!-- center div must appear after left and right to display properly -->
 		<div id="center">
-		<div id="cse"></div> 
+		<div id="cse" style="width:100%;"></div>
 			<p>
 				Welcome to my page.<br />
 				I am currently studying Computer Science and Game Design at Northeastern University.
