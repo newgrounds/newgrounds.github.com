@@ -3,21 +3,25 @@ html {
 }
 
 body {
-	/*background-image: url('');*/
+	background-image: url('bg.jpg');
+	background-size: 100%;
 	min-width: 500px;
+	text-align: center;
 }
 
-body p{
+span {
+	display: inline-block;
+	background-color: rgba(255,255,255,0.65);
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	text-align: center;
+	text-shadow: white 0em 0em 0.4em;
 }
 
 footer {
 	font-size: 20;
 	text-align: center;
-}
-
-p.copy {
-	font-size: 12;
+	text-shadow: white 0em 0em 0.4em;
 }
 
 a {
@@ -28,7 +32,6 @@ a {
 	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 	font-weight: bold;
 	font-size: 60px;
-	text-align: center;
 }
 
 #container {
@@ -45,9 +48,17 @@ a {
 #left {
 	float: left;
 	width: 250px;
+	background-color: rgba(255,255,255,0.65);
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: white 0em 0em 0.4em;
 }
 
 #right {
 	float: right;
 	width: 250px;
+	background-color: rgba(255,255,255,0.65);
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: white 0em 0em 0.4em;
 }

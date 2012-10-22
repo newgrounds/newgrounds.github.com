@@ -11,7 +11,9 @@ Adam Gressen's Webpage
 
 <body>
 	<div id="header">
-		Adam Gressen
+		<span>
+		&nbsp;&nbsp;Adam Gressen&nbsp;&nbsp;
+		</span>
 	</div>
 	<div id="container">
 		<div id="left">
@@ -28,7 +30,8 @@ Adam Gressen's Webpage
 				<br /><br />
 				<a href="./Zombie-Dice">Play Zombie Dice</a>
 				<br /><br />
-				<a href="./WebPlayer.html">Play Teddy!</a>
+				<a href="./WebPlayer.html">Play Teddy!
+				<img src="teddy.png" alt="" height="31"></img></a>
 			</p>
 		</div>
 
@@ -36,70 +39,60 @@ Adam Gressen's Webpage
 			<!---------------------------------------------------------------------------->
 			<!-- TWITTER PLUGIN -->
 			
-			<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<a class="twitter-timeline" href="https://twitter.com/adamgressen" data-widget-id="260249501657337858">Tweets by @adamgressen</a>
 			<script>
-				new TWTR.Widget({
-				  version: 2,
-				  type: 'profile',
-				  rpp: 4,
-				  interval: 30000,
-				  width: 250,
-				  height: 300,
-				  theme: {
-					shell: {
-					  background: '#000000',
-					  color: '#ffffff'
-					},
-					tweets: {
-					  background: '#000000',
-					  color: '#ffffff',
-					  links: '#00ff11'
-					}
-				  },
-				  features: {
-					scrollbar: true,
-					loop: false,
-					live: true,
-					behavior: 'all'
-				  }
-				}).render().setUser('adamgressen').start();
+			!function(d,s,id){
+				var js,fjs=d.getElementsByTagName(s)[0];
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;js.src="//platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}
+			(document,"script","twitter-wjs");
 			</script>
+
 			<!-- END TWITTER PLUGIN -->
 			<!---------------------------------------------------------------------------->
 		</div>
 		
 		<!-- center div must appear after left and right to display properly -->
 		<div id="center">
-			<p>
+			<span>
+				<br />
 				Welcome to my page.<br />
-				I am currently studying Computer Science and Game Design at Northeastern University.<br /><br />
-				I am also actively developing an iPhone app for <a href="http://www.30hands.com" target="_blank">30hands Learning</a>.
-			</p>
-			<p>
+				&nbsp;&nbsp;I am currently studying Computer Science and Game Design at Northeastern University.&nbsp;&nbsp;
+				<br /><br />
+				I am also actively developing an iPhone app for <a href="http://www.30hands.com" target="_blank">
+				<img src="30hands.jpg" alt="30hands Learning" height="31"></img></a>
+				<br /><br />
 				Listen to my music on <a href="http://soundcloud.com/agressen" target="_blank">
 				<img src="soundcloud.png" alt="SoundCloud" height="31"></img></a>
-			</p>
-			<p>
+				<br /><br />
 				Hire me on <a href="https://www.freelancer.com/users/1478095.html" target="_blank">
 				<img src="freelancer.png" alt="Freelancer" height="31"></img></a>
-			</p>
-			<p>
+				<br /><br />
 				Checkout my code on <a href="https://github.com/newgrounds" target="_blank">
 				<img src="github.png" alt="Github" height="31"></img></a>
-			</p>
-			<p>
+				<br /><br />
 				Read my articles on <a href="http://bleacherreport.com/users/699354-adam-gressen" target="_blank">
 				<img src="bleacher.png" alt="Bleacher Report" height="31"></img></a>
-			</p>
+				<br /><br />
+			</span>
+			<br /><br />
 		</div>
 	</div>
 
 </body>
 
 <footer>
-<p class="copy">
-&copy 2012 Adam Gressen
+<span>
+<br />
+&nbsp;&nbsp;
+&copy; 2012 Adam Gressen
 <a href="mailto:adam@adamgressen.com">Contact Me</a>
-</p>
+&nbsp;&nbsp;
+<br /><br />
+</span>
 </footer>
 </html>
