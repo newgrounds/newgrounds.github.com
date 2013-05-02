@@ -4,8 +4,8 @@ html {
 
 body {
 	background-image: url('bg.jpg');
-	background-width: 100%;
-	background-height: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
 	min-width: 500px;
 	text-align: center;
 }
@@ -23,6 +23,7 @@ footer {
 	font-size: 20;
 	text-align: center;
 	text-shadow: white 0em 0em 0.4em;
+	margin-bottom: 50px;
 }
 
 a {
@@ -33,33 +34,64 @@ a {
 	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 	font-weight: bold;
 	font-size: 60px;
+	margin-top: 50px;
 }
 
 #container {
-	width: 100%;
-	float: left;
-	padding-top: 20px;
+	margin: 50px 0 50px 0;
+	position: relative;
 }
 
 #center {
-	padding: 0px 250px 0px 250px;
+	width: 46%;
 	font-weight: bold;
+	margin-left: 27%;
+	margin-right: 2%;
+	background-color: rgba(255,255,255,0.65);
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-shadow: white 0em 0em 0.4em;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 #left {
 	float: left;
-	width: 250px;
+	width: 20%;
+	margin-left: 5%;
 	background-color: rgba(255,255,255,0.65);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	text-shadow: white 0em 0em 0.4em;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 #right {
 	float: right;
-	width: 250px;
+	width: 20%;
+	margin-right: 5%;
 	background-color: rgba(255,255,255,0.65);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	text-shadow: white 0em 0em 0.4em;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+div.clearfix {
+	clear: both;
+}
+
+div.separator {
+	margin-left: auto;
+	margin-top: 30px;
+	margin-right: auto;
+	width: 80%;
+	padding: 0 0 30px 0;
+	border-top: dotted 1px #404040;
+}
+
+div.margin {
+	margin: 20px 20px 20px 20px;
 }
