@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-image: url('bg.jpg');
+	background-image: url('bg.png');
 	background-size: cover;
     background-repeat: no-repeat;
 	min-width: 500px;
@@ -12,12 +12,15 @@ body {
 
 span {
 	display: inline-block;
-	background-color: rgba(255,255,255,0.65);
+	background-color: rgba(35,35,35,0.9);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	text-align: center;
-	text-shadow: white 0em 0em 0.4em;
 	padding: 20px 20px 20px 20px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
 }
 
 footer {
@@ -28,7 +31,15 @@ footer {
 }
 
 a {
-	color: blue;
+	color: rgb(185,75,75);
+	text-decoration: none;
+}
+
+h2 {
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0;
 }
 
 #header {
@@ -41,12 +52,15 @@ a {
 #container {
 	margin: 50px 50px 50px 50px;
 	position: relative;
-	background-color: rgba(255,255,255,0.65);
+	background-color: rgba(35,35,35,0.9);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	text-shadow: white 0em 0em 0.4em;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
 }
 
 #center {
@@ -54,34 +68,43 @@ a {
 	font-weight: bold;
 	margin-left: 27%;
 	margin-right: 2%;
-	background-color: rgba(255,255,255,0.35);
+	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	text-shadow: white 0em 0em 0.4em;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
 }
 
 #left {
 	float: left;
 	width: 25%;
-	background-color: rgba(255,255,255,0.35);
+	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	text-shadow: white 0em 0em 0.4em;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
 }
 
 #right {
 	float: right;
 	width: 25%;
-	background-color: rgba(255,255,255,0.35);
+	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	text-shadow: white 0em 0em 0.4em;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
 }
 
 div.clearfix {
@@ -94,7 +117,8 @@ div.separator {
 	margin-right: auto;
 	width: 80%;
 	padding: 0 0 30px 0;
-	border-top: dotted 1px #404040;
+	border-top: dotted 1px;
+	border-color: rgba(205,205,205,0.6)
 }
 
 div.margin {
