@@ -50,7 +50,7 @@ h2 {
 }
 
 #container {
-	margin: 50px 50px 50px 50px;
+	margin: 10px 50px 50px 50px;
 	position: relative;
 	background-color: rgba(35,35,35,0.9);
 	-moz-border-radius: 15px;
@@ -123,4 +123,132 @@ div.separator {
 
 div.margin {
 	margin: 20px 20px 20px 20px;
+}
+
+
+
+
+
+#menu ul {
+	margin: 10px 32% 10px 32%;
+	padding: 7px 6px 0;
+	line-height: 100%;
+	font: normal 0.53em Arial, Helvetica, sans-serif;
+	width: auto;
+	background-color: rgba(35,35,35,0.9);
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: rgb(205,205,205);
+	text-shadow: black 0em 0em 0.4em;
+	border-color: rgba(205,205,205,0.3);
+	border-style: solid;
+}
+#menu
+ li {
+  margin: 0 5px;
+  padding: 0 0 8px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu
+ a,
+#menu
+ a:link {
+  font-weight: bold;
+  font-size: 13px;
+  color: #e7e5e5;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px;
+  margin: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+#menu
+ a:hover {
+  background: #000;
+  color: #fff;
+}
+#menu
+ .active a,
+#menu
+ li:hover > a {
+ 	background: -webkit-linear-gradient(rgb(75,75,75), rgb(45,45,45)); /* For Safari */
+	background: -o-linear-gradient(rgb(75,75,75), rgb(45,45,45)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(75,75,75), rgb(45,45,45)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(75,75,75), rgb(45,45,45)); /* Standard syntax */
+	color: rgb(205,205,205);
+	text-shadow: 0 1px 1px #000000;
+}
+#menu
+ ul ul li:hover a,
+#menu
+ li:hover li a {
+  background: none;
+  border: none;
+  color: rgb(205,205,205);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu
+ ul ul a:hover {
+	background: -webkit-linear-gradient(rgb(75,75,75), rgb(45,45,45)) !important; /* For Safari */
+	background: -o-linear-gradient(rgb(75,75,75), rgb(45,45,45)) !important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgb(75,75,75), rgb(45,45,45)) !important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgb(75,75,75), rgb(45,45,45)) !important; /* Standard syntax */
+	color: #fff !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-shadow: 0 1px 1px #000000;
+}
+#menu
+ li:hover > ul {
+  display: block;
+}
+#menu
+ ul ul {
+  z-index: 1000;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: rgb(35,35,35);
+  border: solid 1px #b4b4b4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#menu
+ ul ul li {
+  float: none;
+  margin: 0;
+  padding: 3px;
+}
+#menu
+ ul ul a,
+#menu
+ ul ul a:link {
+  font-weight: normal;
+  font-size: 12px;
+}
+#menu
+ ul:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+* html #menu
+ ul {
+  height: 1%;
 }
