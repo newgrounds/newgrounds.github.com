@@ -4,6 +4,7 @@ html {
 
 body {
 	background-image: url('bg.png');
+	background-color: rgb(120,120,120);
 	background-size: cover;
     background-repeat: no-repeat;
 	min-width: 500px;
@@ -128,10 +129,9 @@ div.margin {
 
 
 
-
 #menu ul {
 	margin: 10px 32% 10px 32%;
-	padding: 7px 6px 0;
+	padding: 7px 45px 0;
 	line-height: 100%;
 	font: normal 0.53em Arial, Helvetica, sans-serif;
 	width: auto;
