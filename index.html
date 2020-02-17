@@ -27,39 +27,37 @@ Adam Gressen's Webpage
 		<span>
 			Adam Gressen
 		</span>
-	</div>
 
-	<div id='menu'>
-		<ul>
-		   <li class='active'><a href='http://www.adamgressen.com'>Home</a></li>
-		   <li class='has-sub'><a href='http://www.adamgressen.com/games.html'>Games</a>
-		      <ul>
-		      	<li><a href='http://www.grapplehook.me/skorecery'>Skorecery</a></li>
-				<li><a href='http://www.grapplehook.me/squadhero'>SquadHero: Revolver</a></li>
-				<li><a href='http://www.runedaddies.com'>Rune Daddies</a></li>
-				<li><a href='http://newgramps.itch.io/rogue-infinity'>Rogue Infinity</a></li>
-				<li><a href='http://adamgressen.com/PointCounterpoint'>Point Counterpoint</a></li>
-				<li><a href='http://adamgressen.com/Zombie-Dice'>Zombie Dice</a></li>
-				<li class='last'><a href='http://adamgressen.com/Teddy.html'>Teddy!</a></li>
-		      </ul>
-		   </li>
-		   <li class='has-sub'><a href='#'>Side Projects</a>
-		      <ul>
-		         <li><a href='http://soundcloud.com/agressen'>SoundCloud</a></li>
-		      </ul>
-		   </li>
-		   <li class='last'><a href='#'>Contact</a>
-		   	  <ul>
-		         <li><a href='http://www.facebook.com/agressen'>Facebook</a></li>
-		         <li><a href='https://plus.google.com/105797963965211800206/posts'>Google+</a></li>
-		         <li class='last'><a href='http://www.linkedin.com/in/adamgressen'>Linkedin</a></li>
-		      </ul>
-		   </li>
-		</ul>
+		<div id='menu'>
+			<ul>
+				<li class='active'><a href='http://www.adamgressen.com'>Home</a></li>
+				<li class='has-sub'><a href='http://www.adamgressen.com/games.html'>Games</a>
+					<ul>
+						<li><a href='http://www.grapplehook.me/skorecery'>Skorecery</a></li>
+					<li><a href='http://www.grapplehook.me/squadhero'>SquadHero: Revolver</a></li>
+					<li><a href='http://www.runedaddies.com'>Rune Daddies</a></li>
+					<li><a href='http://newgramps.itch.io/rogue-infinity'>Rogue Infinity</a></li>
+					<li><a href='http://adamgressen.com/PointCounterpoint'>Point Counterpoint</a></li>
+					<li><a href='http://adamgressen.com/Zombie-Dice'>Zombie Dice</a></li>
+					<li class='last'><a href='http://adamgressen.com/Teddy.html'>Teddy!</a></li>
+					</ul>
+				</li>
+				<li class='has-sub'><a href='#'>Side Projects</a>
+					<ul>
+						<li><a href='http://soundcloud.com/agressen'>SoundCloud</a></li>
+					</ul>
+				</li>
+				<li class='last'><a href='#'>Contact</a>
+						<ul>
+						<li class='last'><a href='http://www.linkedin.com/in/adamgressen'>Linkedin</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div id="container">
-		<div class="margin">
+		<div class="margin" id="container-flex">
 			<div id="left">
 				<div class="margin">
 					<h2>Gaming</h2>
@@ -79,31 +77,6 @@ Adam Gressen's Webpage
 				</div>
 			</div>
 
-			<div id="right">
-				<div class="margin">
-					<!---------------------------------------------------------------------------->
-					<!-- TWITTER PLUGIN -->
-					
-					<a class="twitter-timeline" href="https://twitter.com/adamgressen" data-widget-id="260249501657337858">Tweets by @adamgressen</a>
-					<script>
-					!function(d,s,id){
-						var js,fjs=d.getElementsByTagName(s)[0];
-						if(!d.getElementById(id)){
-							js=d.createElement(s);
-							js.id=id;js.src="//platform.twitter.com/widgets.js";
-							fjs.parentNode.insertBefore(js,fjs);
-						}
-					}
-					(document,"script","twitter-wjs");
-					</script>
-
-					<!-- END TWITTER PLUGIN -->
-					<!---------------------------------------------------------------------------->
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			
-			<!-- center div must appear after left and right to display properly -->
 			<div id="center">
 				<div class="margin">
 					Welcome to my page.<br />
@@ -143,6 +116,30 @@ Adam Gressen's Webpage
 					Selected as "Most Innovative Game" &amp; "Best Overall Game"<br />at <a href="http://www.northeastern.edu/games/demo/">Northeastern University Game Demo Day</a>.
 				</div>
 			</div>
+
+			<div id="right">
+				<div class="margin">
+					<!---------------------------------------------------------------------------->
+					<!-- TWITTER PLUGIN -->
+					
+					<a class="twitter-timeline" href="https://twitter.com/adamgressen" data-widget-id="260249501657337858">Tweets by @adamgressen</a>
+					<script>
+					!function(d,s,id){
+						var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)){
+							js=d.createElement(s);
+							js.id=id;js.src="//platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+					(document,"script","twitter-wjs");
+					</script>
+
+					<!-- END TWITTER PLUGIN -->
+					<!---------------------------------------------------------------------------->
+					<div class="clearfix"></div>
+				</div>
+			</div>
 		<div class="clearfix"></div>
 		</div>
 	</div>
@@ -151,7 +148,7 @@ Adam Gressen's Webpage
 
 <footer>
 	<span>
-		&copy; 2014 Adam Gressen
+		&copy; <script>document.write(new Date().getFullYear())</script> Adam Gressen
 		<a href="mailto:adam@adamgressen.com">Contact Me</a>
 	</span>
 </footer>

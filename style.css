@@ -3,32 +3,24 @@ html {
 }
 
 body {
-	background-image: url('bg.png');
-	background-color: rgb(120,120,120);
-	background-size: cover;
-    background-repeat: no-repeat;
+	background-color: rgb(24, 18, 25);
 	min-width: 500px;
 	text-align: center;
 }
 
 span {
 	display: inline-block;
-	background-color: rgba(35,35,35,0.9);
 	-moz-border-radius: 15px;
-	border-radius: 15px;
 	text-align: center;
-	padding: 20px 20px 20px 20px;
+	padding: 10px;
 	color: rgb(205,205,205);
 	text-shadow: black 0em 0em 0.4em;
-	border-color: rgba(205,205,205,0.3);
-	border-style: solid;
 }
 
 footer {
 	font-size: 20;
 	text-align: center;
 	text-shadow: white 0em 0em 0.4em;
-	margin-bottom: 50px;
 }
 
 a {
@@ -47,11 +39,10 @@ h2 {
 	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 	font-weight: bold;
 	font-size: 60px;
-	margin-top: 50px;
+	margin-top: 5px;
 }
 
 #container {
-	margin: 10px 50px 50px 50px;
 	position: relative;
 	background-color: rgba(35,35,35,0.9);
 	-moz-border-radius: 15px;
@@ -78,10 +69,11 @@ h2 {
 }
 
 #center {
-	width: 46%;
+	flex: 2;
+	order: 2;
 	font-weight: bold;
-	margin-left: 27%;
-	margin-right: 2%;
+	margin-left: 10px;
+	margin-right: 10px;
 	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -94,8 +86,8 @@ h2 {
 }
 
 #left {
-	float: left;
-	width: 25%;
+	flex: 1;
+	order: 1;
 	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -108,8 +100,8 @@ h2 {
 }
 
 #right {
-	float: right;
-	width: 25%;
+	flex: 1;
+	order: 3;
 	background-color: rgba(95,55,95,0.35);
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -176,15 +168,42 @@ div.box:hover {
 }
 
 div.margin {
-	margin: 20px 20px 20px 20px;
+	margin: 10px;
+}
+
+#container-flex {
+	display: flex;
+}
+
+@media screen and (max-width: 1111px) {
+  #container-flex {
+    flex-direction: column;
+  }
+
+  #left {
+	order: 2;
+	margin-bottom: 10px;
+  }
+
+  #right {
+    order: 3;
+  }
+
+  #center {
+	order: 1;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+  }
 }
 
 
 
 
+
 #menu ul {
-	margin: 10px 32% 10px 32%;
-	padding: 7px 45px 0;
+	margin: 10px 20% 10px 20%;
+	padding: 7px 0 0;
 	line-height: 100%;
 	font: normal 0.53em Arial, Helvetica, sans-serif;
 	width: auto;
@@ -196,12 +215,13 @@ div.margin {
 	text-shadow: black 0em 0em 0.4em;
 	border-color: rgba(205,205,205,0.3);
 	border-style: solid;
+	display: flex;
 }
 #menu
  li {
   margin: 0 5px;
   padding: 0 0 8px;
-  float: left;
+  flex: 3;
   position: relative;
   list-style: none;
 }
